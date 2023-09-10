@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Register</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Login -->
+    <div class="login">
+      <div class="login-info">
+        <div class="info">
+          <div class="username">
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+          </div>
+          <div class="password">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+          </div>
+        </div>
+        <div class="login-btn">
+          <span>Sign In</span>
+        </div>
+      </div>
+      <div class="to-register">
+        if you don't have an account, you may hope to Register
+        <span class="to-register-btn">here</span>
+      </div>
+    </div>
+    <!-- Register -->
+    <div class="register">
+      <div class="register-info">
+        <div class="info">
+          <div class="username">
+            <label for="new-username">Input Username:</label>
+            <input type="text" id="new-username">
+          </div>
+          <div class="password">
+            <label for="reg-password-one">Input Password:</label>
+            <input type="password" id="reg-password-one">
+          </div>
+          <div class="password">
+            <label for="reg-password-two">Check Password:</label>
+            <input type="password" id="reg-password-two">
+          </div>
+        </div>
+        <div class="register-btn">
+          <span>Sign Up</span>
+        </div>
+      </div>
+      <div class="to-login">
+        if you have an account, you may hope to Login
+        <span class="to-login-btn">here</span>
+      </div>
+    </div>
+    <!-- Success -->
+    <div class="welcome">
+      <h1>WELCOME</h1>
+      <span id="welcome-user-name"></span>
+      <span class="to-login-btn" id="sign-out">Sign Out</span>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
